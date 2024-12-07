@@ -7,7 +7,7 @@ const Details = () => {
 
   return (
     <div>
-      Details of:
+      Details of the product:
       <br></br>
       {useLocationHook.pathname}
     </div>
