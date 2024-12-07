@@ -4,14 +4,16 @@ import Home from "./components/Home";
 import Details from "./components/Details";
 
 function App() {
+  
   return (
     <div className="app-container">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details/:id" element={<Details />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/details/:id" element={<Details/>} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+

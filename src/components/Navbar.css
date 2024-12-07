@@ -59,6 +59,7 @@
 
 /* Individual category item */
 .category-item {
+    cursor: pointer;
     display: flex;
     align-items: center;
     /* Replace `flex items-center` */
