@@ -1,8 +1,14 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Navbar.css"; // Import the CSS file
 
-const Navbar = ({ category }) => {
+const Navbar = ({ category ,setCategoryProp}) => {
   console.log(category);
+
+  function categoryHandler(event){
+    setCategoryProp(event.target.innerText);
+  }
 
   return (
     <nav className="navbar">
@@ -13,9 +19,9 @@ const Navbar = ({ category }) => {
         {category.length > 0 &&
           category.map((elem, idx) => {
             return (
-              <li key={idx} className="category-item">
+              <li onClick={categoryHandler} key={idx} className="category-item">
                 <span className="category-indicator"></span>
-                {elem}
+                  {elem}
               </li>
             );
           })}
